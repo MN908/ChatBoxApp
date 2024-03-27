@@ -1,0 +1,15 @@
+<div style="border: 2px solid black; height: 58vh; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 33%; text-align: center; cursor:pointer">
+  <div class="chat-box-container">
+    <div class="messages-container">
+      <h3><u><span style="color:red"> Chat</span> Box</u> </h3>
+      <div class="message">
+        <span class="message-user"></span>
+        <span class="message-content"></span>
+      </div>
+    </div>
+    <div class="input-container">
+      <textarea #messageInput class="message-input" placeholder="Type your message..."></textarea>
+      <button (click)="sendMessage()" style="cursor:pointer " class="send-button">Send</button>
+    </div>
+  </div>
+</div>
